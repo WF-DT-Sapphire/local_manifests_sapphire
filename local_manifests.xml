@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
     <!-- Remotes -->
-    <remote name="WF-DT-Sapphire" fetch="https://github.com/WF-DT-Sapphire" clone-depth="1" />
+    <remote name="sapphire-sm6225" fetch="https://github.com/sapphire-sm6225" clone-depth="1" />
+    <remote name="saroj-nokia" fetch="https://github.com/saroj-nokia" clone-depth="1" />
+    <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
     <remote name="lineageos4microg" fetch="https://github.com/lineageos4microg/" />
     <remote name="The-Angel-Place-Sapphire" fetch="https://github.com/The-Angel-Place-Sapphire/" clone-depth="1" />
 
-    <!-- Removals -->
-
-    <!-- Repos -->
-    <!-- Device -->
+    <!-- Kernel -->
     <project path="kernel/xiaomi/sapphire" name="kernel_xiaomi_sapphire" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
     <project path="kernel/xiaomi/sapphire-devicetrees" name="kernel_xiaomi_sapphire-devicetrees" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
     <project path="kernel/xiaomi/sapphire-modules" name="kernel_xiaomi_sapphire-modules" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
-    <project path="device/xiaomi/sepolicy" name="device_xiaomi_sepolicy" remote="WF-DT-Sapphire" revision="15" />
-    <project path="device/xiaomi/sapphire" name="device_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-22.2" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/sepolicy" name="device_xiaomi_sepolicy" remote="sapphire-sm6225" revision="16" />
+    <project path="device/xiaomi/sapphire" name="device_xiaomi_sapphire" remote="saroj-nokia" revision="lineage-23.2" />
 
     <!-- Vendor -->
-    <project path="vendor/xiaomi/sapphire" name="vendor_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-22.2" />
-    <project path="vendor" name="keys-for-lineage20" remote="WF-DT-Sapphire" revision="main" />
+    <project path="vendor/xiaomi/sapphire" name="vendor_xiaomi_sapphire" remote="saroj-nokia" revision="lineage-23.2" />
+    <project path="vendor" name="keys-for-lineage20" remote="saroj-nokia" revision="main" />
 
     <!-- MicroG -->
     <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="lineageos4microg" revision="master" />
 
     <!-- Hardware -->
-    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="WF-DT-Sapphire" revision="lineage-22.2" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="LineageOS" revision="lineage-23.2" />
 </manifest>
