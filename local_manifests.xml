@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!-- Generated using sounddrill31/actions_generate_local_manifests -->
+  <!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
-    <!-- Remotes -->
-    <remote name="WF-DT-Sapphire" fetch="https://github.com/WF-DT-Sapphire" clone-depth="1" />
-    <remote name="lineageos4microg" fetch="https://github.com/lineageos4microg/" />
-    <remote name="The-Angel-Place-Sapphire" fetch="https://github.com/The-Angel-Place-Sapphire/" clone-depth="1" />
+  <!-- Remotes -->
+  <remote name="sapphire-sm6225" fetch="https://github.com/sapphire-sm6225" clone-depth="1" />
+  <remote name="saro-jokia" fetch="https://github.com/saro-jokia" clone-depth="1" />
+  <remote name="lineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
+  <remote name="lineageos4microg" fetch="https://github.com/lineageos4microg/" />
 
-    <!-- Removals -->
+  <!-- Removals -->
+  
+  <!-- Repos -->
+  <!-- Device -->
+  <project path="kernel/xiaomi/sapphire" name="kernel_xiaomi_sapphire" remote="saro-jokia" revision="lineage-23.2" />
+  <project path="kernel/xiaomi/sapphire-devicetrees" name="kernel_xiaomi_sapphire-devicetrees" remote="saro-jokia" revision="lineage-23.2" />
+  <project path="kernel/xiaomi/sapphire-modules" name="kernel_xiaomi_sapphire-modules" remote="saro-jokia" revision="lineage-23.2" />
+  <project path="device/xiaomi/sapphire" name="device_xiaomi_sapphire" remote="saro-jokia" revision="lineage-24.0" />
 
-    <!-- Repos -->
-    <!-- Device -->
-    <project path="kernel/xiaomi/sapphire" name="kernel_xiaomi_sapphire" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
-    <project path="kernel/xiaomi/sapphire-devicetrees" name="kernel_xiaomi_sapphire-devicetrees" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
-    <project path="kernel/xiaomi/sapphire-modules" name="kernel_xiaomi_sapphire-modules" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
-    <project path="device/xiaomi/sepolicy" name="device_xiaomi_sepolicy" remote="WF-DT-Sapphire" revision="15" />
-    <project path="device/xiaomi/sapphire" name="device_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-22.2" />
+  <!-- Device - Common -->
+  <!-- Kernel -->
+  
+  <!-- Vendor -->
+  <project path="vendor/xiaomi/sapphire" name="vendor_xiaomi_sapphire" remote="saro-jokia" revision="lineage-24.0" />
+  
+  <!-- MicroG -->
+  <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="lineageos4microg" revision="master" />
 
-    <!-- Vendor -->
-    <project path="vendor/xiaomi/sapphire" name="vendor_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-22.2" />
-    <project path="vendor" name="keys-for-lineage20" remote="WF-DT-Sapphire" revision="main" />
-
-    <!-- MicroG -->
-    <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="lineageos4microg" revision="master" />
-
-    <!-- Hardware -->
-    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="WF-DT-Sapphire" revision="lineage-22.2" />
+  <!-- Vendor - Common -->
+  <!-- Hardware -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineageOS" revision="lineage-24.0" />
 </manifest>
