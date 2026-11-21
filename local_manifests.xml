@@ -4,16 +4,16 @@
 
     <!-- Remotes -->
     <remote name="WF-DT-Sapphire" fetch="https://github.com/WF-DT-Sapphire" clone-depth="1" />
+    <remote name="lineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
     <remote name="lineageos4microg" fetch="https://github.com/lineageos4microg/" />
-    <remote name="The-Angel-Place-Sapphire" fetch="https://github.com/The-Angel-Place-Sapphire/" clone-depth="1" />
 
     <!-- Removals -->
 
     <!-- Repos -->
     <!-- Device -->
-    <project path="kernel/xiaomi/sapphire" name="kernel_xiaomi_sapphire" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
-    <project path="kernel/xiaomi/sapphire-devicetrees" name="kernel_xiaomi_sapphire-devicetrees" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
-    <project path="kernel/xiaomi/sapphire-modules" name="kernel_xiaomi_sapphire-modules" remote="The-Angel-Place-Sapphire" revision="lineage-23.2" />
+    <project path="kernel/xiaomi/sapphire" name="kernel_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-23.2" />
+    <project path="kernel/xiaomi/sapphire-devicetrees" name="kernel_xiaomi_sapphire-devicetrees" remote="WF-DT-Sapphire" revision="lineage-23.2" />
+    <project path="kernel/xiaomi/sapphire-modules" name="kernel_xiaomi_sapphire-modules" remote="WF-DT-Sapphire" revision="lineage-23.2" />
     <project path="device/xiaomi/sepolicy" name="device_xiaomi_sepolicy" remote="WF-DT-Sapphire" revision="15" />
     <project path="device/xiaomi/sapphire" name="device_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-22.2" />
 
@@ -25,5 +25,5 @@
     <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="lineageos4microg" revision="master" />
 
     <!-- Hardware -->
-    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="WF-DT-Sapphire" revision="lineage-22.2" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="lineageOS" revision="lineage-22.2" />
 </manifest>
