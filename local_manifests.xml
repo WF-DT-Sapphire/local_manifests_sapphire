@@ -4,7 +4,6 @@
 
     <!-- Remotes -->
     <remote name="WF-DT-Sapphire" fetch="https://github.com/WF-DT-Sapphire" clone-depth="1" />
-    <remote name="lineageos4microg" fetch="https://github.com/lineageos4microg/" />
 
     <!-- Removals -->
 
@@ -21,7 +20,10 @@
     <project path="vendor" name="keys-for-lineage20" remote="WF-DT-Sapphire" revision="main" />
 
     <!-- MicroG -->
-    <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="lineageos4microg" revision="master" />
+    <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="WF-DT-Sapphire" revision="microg" />
+
+    <!-- ViPER4AndroidFX -->
+    <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="WF-DT-Sapphire" revision="v4a" />
 
     <!-- Hardware -->
     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="WF-DT-Sapphire" revision="lineage-22.2" />
