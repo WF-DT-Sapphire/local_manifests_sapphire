@@ -4,6 +4,7 @@
     <!-- Remotes -->
     <remote name="WF-DT-Sapphire" fetch="https://github.com/WF-DT-Sapphire" clone-depth="1" />
     <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
+    <remote name="theangelplace" fetch="https://github.com/The-Angel-Place-Sapphire" clone-depth="1" />
 
     <!-- Kernel -->
     <project path="kernel/xiaomi/sapphire" name="kernel_xiaomi_sapphire" remote="WF-DT-Sapphire" revision="lineage-23.2" />
@@ -20,6 +21,9 @@
 
     <!-- MicroG -->
     <project path="vendor/partner_gms" name="android_vendor_partner_gms" remote="WF-DT-Sapphire" revision="microg" />
+
+    <!-- Apps (Angel) -->
+    <project path="packages/apps/XiaomiParts" name="packages_apps_XiaomiParts" remote="theangelplace" revision="16.2" />
 
     <!-- Hardware -->
     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="LineageOS" revision="lineage-23.2" />
